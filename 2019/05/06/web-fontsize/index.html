@@ -2,20 +2,25 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>归档: 2019/4 - Mrsnial&#39;s blog</title>
+<title>px,em,rem,vh,vw,vmin,vmax的区别 - Mrsnial&#39;s blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Mrsnial&#39;s blog">
-<meta property="og:url" content="https://github.com/liqing1620/hexo-blog/archives/2019/04/index.html">
+    <meta name="description" content="CSS手册中关于font-size是这么介绍的：font-size 值可以是绝对或相对值。">
+<meta name="keywords" content="尺寸">
+<meta property="og:type" content="article">
+<meta property="og:title" content="px,em,rem,vh,vw,vmin,vmax的区别">
+<meta property="og:url" content="https://github.com/liqing1620/hexo-blog/2019/05/06/web-fontsize/index.html">
 <meta property="og:site_name" content="Mrsnial&#39;s blog">
+<meta property="og:description" content="CSS手册中关于font-size是这么介绍的：font-size 值可以是绝对或相对值。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://github.com/hexo-blog/images/og_image.png">
+<meta property="og:image" content="https://github.com/hexo-blog/hexo-blog/gallery/thumbnails/response.jpg">
+<meta property="og:updated_time" content="2019-05-06T10:00:53.335Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mrsnial&#39;s blog">
-<meta name="twitter:image" content="https://github.com/hexo-blog/images/og_image.png">
+<meta name="twitter:title" content="px,em,rem,vh,vw,vmin,vmax的区别">
+<meta name="twitter:description" content="CSS手册中关于font-size是这么介绍的：font-size 值可以是绝对或相对值。">
+<meta name="twitter:image" content="https://github.com/hexo-blog/hexo-blog/gallery/thumbnails/response.jpg">
 
 
 
@@ -89,7 +94,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/hexo-blog/">
             
-                <img src="/hexo-blog/images/snail.svg" alt="Mrsnial&#39;s blog" height="28">
+                <img src="/hexo-blog/images/snail.svg" alt="px,em,rem,vh,vw,vmin,vmax的区别" height="28">
             
             </a>
         </div>
@@ -121,6 +126,10 @@
                     
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -134,144 +143,158 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/hexo-blog/gallery/thumbnails/response.jpg" alt="px,em,rem,vh,vw,vmin,vmax的区别">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-06T06:15:17.000Z">2019-05-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/hexo-blog/categories/前端/">前端</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/hexo-blog/categories/前端/几个单位的区别/">几个单位的区别</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    16 分钟 读完 (大约 2425 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                px,em,rem,vh,vw,vmin,vmax的区别
+            
+        </h1>
+        <div class="content">
+            <p>CSS手册中关于font-size是这么介绍的：<br>font-size 值可以是绝对或相对值。<br><a id="more"></a><br>绝对值：<br>将文本设置为指定的大小<br>不允许用户在所有浏览器中改变文本大小（不利于可用性）<br>绝对大小在确定了输出的物理尺寸时很有用<br>相对大小：<br>相对于周围的元素来设置大小<br>允许用户在浏览器改变文本大小</p>
+<p><code>注意：如果您没有规定字体大小，普通文本（比如段落）的默认大小是 16 像素 (16px=1em)。</code></p>
+<h2 id="px：为像素单位。它是显示屏上显示的每一个小点，为显示的最小单位。它是一个绝对尺寸单位；"><a href="#px：为像素单位。它是显示屏上显示的每一个小点，为显示的最小单位。它是一个绝对尺寸单位；" class="headerlink" title="px：为像素单位。它是显示屏上显示的每一个小点，为显示的最小单位。它是一个绝对尺寸单位；"></a>px：为像素单位。它是显示屏上显示的每一个小点，为显示的最小单位。它是一个绝对尺寸单位；</h2><h2 id="em：相对值，非固定大小单位"><a href="#em：相对值，非固定大小单位" class="headerlink" title="em：相对值，非固定大小单位"></a>em：相对值，非固定大小单位</h2><p>1em 等于当前的字体尺寸。如果一个元素的 font-size 为 16 像素，那么对于该元素，1em 就等于 16 像素。在设置字体大小时，em 的值会相对于父元素的字体大小改变。<br>浏览器中默认的文本大小是 16 像素。因此 1em 的默认尺寸是 16 像素。<br><code>可以使用下面这个公式将像素转换为 em：pixels/16=em</code><br>（注：16 等于父元素的默认字体大小，假设父元素的 font-size 为 20px，那么公式需改为：pixels/20=em）<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head lang=<span class="hljs-string">"en"</span>&gt;</span><br><span class="line">    &lt;meta charset=<span class="hljs-string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;px,em,rem,vh,vw,vmin,vmax的区别&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        div&#123;font-size:1.5em;&#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div class=<span class="hljs-string">"id1"</span>&gt;div1</span><br><span class="line">    &lt;div class=<span class="hljs-string">"id2"</span>&gt;div2</span><br><span class="line">        &lt;div class=<span class="hljs-string">"id3"</span>&gt;div3&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p><img src="/hexo-blog/gallery/thumbnails/em.png" alt="em效果图"><br>上图代码中规定div的字体大小同样都是1.5em,但是效果却是截然不同，根据公式我们可以得到如下换算结果：<br>body默认的字体大小为16px；</p>
+<p>class为id1的div字体大小继承自父元素<code>body</code>：<code>16px*1.5em = 24px</code></p>
+<p>class为id2的div字体大小继承自父元素<code>id1</code>：<code>24px*1.5em = 36px</code></p>
+<p>class为id3的div字体大小继承自父元素<code>id2</code>：<code>36px*1.5em = 54px</code></p>
+<p><strong><em>传送门：<a href="http://pxtoem.com/" target="_blank" rel="noopener">pxtoem单位转换</a></em></strong><br>提示：(在IE浏览器中，暂不支持重新调整用px作为字体的大小单位,虽然可以通过浏览器的缩放工具调整文本大小,但仅是对整个页面的调整,而不仅限于文本,W3C推荐使用em尺寸单位)</p>
+<h2 id="rem：W3C官网是这样描述的“fontsize-of-the-root-element”，root-element就是指的根元素html"><a href="#rem：W3C官网是这样描述的“fontsize-of-the-root-element”，root-element就是指的根元素html" class="headerlink" title="rem：W3C官网是这样描述的“fontsize of the root element”，root element就是指的根元素html"></a>rem：W3C官网是这样描述的“fontsize of the root element”，root element就是指的根元素html</h2><p>前面说到的em是相对于其父元素来设置字体大小的，这样就会存在一个问题，进行任何元素设置，都必须知道父元素的字体大小，在多次使用中往往会给我们带来无法预知的错误风险。<code>而rem是相对于根元素html</code><br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head lang=<span class="hljs-string">"en"</span>&gt;</span><br><span class="line">    &lt;meta charset=<span class="hljs-string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;px,em,rem,vh,vw,vmin,vmax的区别&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        div&#123;font-size:1.5rem;&#125;</span><br><span class="line">        .id3&#123;font-size:1.5em;&#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div class=<span class="hljs-string">"id1"</span>&gt;div1</span><br><span class="line">    &lt;div class=<span class="hljs-string">"id2"</span>&gt;div2</span><br><span class="line">        &lt;div class=<span class="hljs-string">"id3"</span>&gt;div3&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html</span><br></pre></td></tr></table></figure></p>
+<p><img src="/hexo-blog/gallery/thumbnails/rem.png" alt="rem效果图"><br>div1和div2的字体大小：继承自<code>浏览器默认字体大小16px * 1.5rem = 24px</code></p>
+<p>div3的字体大小：继承自<code>父元素div2的字体大小24px * 1.5em = 36px</code></p>
+<p>浏览器的兼容性问题：rem是CSS3新引进来的一个度量单位，支持Mozilla Firefox 3.6+、Apple Safari 5+、Google Chrome、IE9+和Opera11+，IE8及以下版本均不支持</p>
+<h2 id="百分比，相对长度单位，相对于父元素的百分比值"><a href="#百分比，相对长度单位，相对于父元素的百分比值" class="headerlink" title="% 百分比，相对长度单位，相对于父元素的百分比值"></a>% 百分比，相对长度单位，相对于父元素的百分比值</h2><p>需要注意的是：em是相对于应用于当前当前元素的字体尺寸；而百分比则是相对于父元素的尺寸。<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head lang=<span class="hljs-string">"en"</span>&gt;</span><br><span class="line">    &lt;meta charset=<span class="hljs-string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        div&#123;margin:10px; background:<span class="hljs-comment">#f0f;&#125;</span></span><br><span class="line">        .parent&#123;width:200px; font-size:18px;&#125;</span><br><span class="line">        .em-demo&#123;width:5em; background:<span class="hljs-comment">#eae;&#125;</span></span><br><span class="line">        .percentage-demo&#123;width:80%; background:<span class="hljs-comment">#2f6;&#125;</span></span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div class=<span class="hljs-string">"parent"</span>&gt;</span><br><span class="line">    &lt;div class=<span class="hljs-string">"em-demo"</span>&gt;</span><br><span class="line">        设置长度为5em demo</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=<span class="hljs-string">"percentage-demo"</span>&gt;</span><br><span class="line">        设置长度为80% demo</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div id=<span class="hljs-string">"id"</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p><img src="/hexo-blog/gallery/thumbnails/percent.png" alt="百分比效果图"><br>可以看到，以em为单位的div宽度为90px：18px <em> 5em，以%为单位的div宽度为160px：200px </em> 0.8</p>
+<p>对于px、em和百分比都能设置元素的尺寸和字体大小，但是它们各自有自己所不同的应用场景。不合理的运用，则会导致页面的混乱、难易维护和扩展。对于它们的使用，有如下几点被大家所认同的最佳实践：</p>
+<ul>
+<li><h3 id="尽量使用相对尺寸单位"><a href="#尽量使用相对尺寸单位" class="headerlink" title="尽量使用相对尺寸单位"></a>尽量使用相对尺寸单位</h3><p>使用相对尺寸单位计量，则在调整页面的布局的时候，不需要遍历所有的内部DOM结构，重新设置内部子元素的尺寸大小，同时它也能更好的适应与多中分辨率和屏幕终端。采用相对定位，并不意味着页面整体的自适应。<br>当然，对于希望整体网站的“响应式设计”，适应当今层出不穷的的各类访问终端，相对尺寸布局将发挥更大的价值。我们仅需要利用CSS3的@media查询来设置外围的整体宽度，以及少量在设备上不一致的用户体验。关于“响应式布局”，可以更多的参考bootstrap这类新兴的CSS框架。<br>对于相对尺寸单位的设置：em和%因为它们相对的参考物不同，所以它们也有不同的使用场景。如果希望随着当前元素的字体尺寸而改变尺寸，则使用em最佳，如：行高、字体大小。相反，如果是随着父容器或者是整体页面布局而改变尺寸，则使用%更好，如元素的高度和宽度设置。</p>
+</li>
+<li><h3 id="只在可预知的元素上使用绝对尺寸"><a href="#只在可预知的元素上使用绝对尺寸" class="headerlink" title="只在可预知的元素上使用绝对尺寸"></a>只在可预知的元素上使用绝对尺寸</h3><p>并不是所有的元素设置相对尺寸就是最佳的。对于如图表icon、如video这类多媒体元素、网页整体的宽度这类可预知尺寸，设置为绝对路径可能反而是最佳的选择。但他们需要试具体场景而定，从而获得最佳体验。不管我们如此设置相对尺寸，但在外层也总会有一些绝对尺寸度量，才可能存在百分比这类相对尺寸设置。</p>
+</li>
+<li><h3 id="字体尺寸尽量使用em、rem"><a href="#字体尺寸尽量使用em、rem" class="headerlink" title="字体尺寸尽量使用em、rem"></a>字体尺寸尽量使用em、rem</h3><p>和尽量使用相对尺寸单位一样，为了字体大小的可维护性和伸缩性，W3C更推荐使用em作为字体尺寸单位。需要注意的是，如果存在3层以及3层以上的字体相对尺寸的设置，则对于实际字体大小的计算，就会变得相对麻烦。这个时候，在满足浏览器兼容性的情况下，可以考虑使用CSS3的新特性rem：根据固定根元素的字体大小来设置相对尺寸大小，这也是近几年移动APP所兴起的使用方式。</p>
+<p>rem的兼容性，我们可以用<a href="http://caniuse.com/" target="_blank" rel="noopener">Can I Use</a>网站获取。</p>
+</li>
+<li><h3 id="media查询做平台适配，但禁止随处滥用"><a href="#media查询做平台适配，但禁止随处滥用" class="headerlink" title="@media查询做平台适配，但禁止随处滥用"></a>@media查询做平台适配，但禁止随处滥用</h3><p>如上所说CSS3的@media查询，能帮助我们做到多平台终端的自适应布局，得到一个更好的用户体验。但这绝不意味着我们可以随处滥用它，在CSS代码中存在太多的平台差异的代码，这也会增加代码可读性、维护性的难度。更好的方式则是仅在必须使用它的场景下，合理的使用它，如页面外围的整体宽度，不同显示的菜单栏等。更多的体验适应性，可以移动到使用“流式布局”来实现。<br>关于响应式设计，这是对开发周期、成本和平台体验的一个权衡的结果。如果不考虑开发、维护的成本，则为不同平台终端提供不同的页面设计，这样得到的用户体验会更友好。但在实际开发中，开发和维护成本、产品生命周期也是一个重要的权衡标准，而响应式设计则是它们之间的权衡结果。</p>
+</li>
+<li><h3 id="vh和vw，vmin和vmax"><a href="#vh和vw，vmin和vmax" class="headerlink" title="vh和vw，vmin和vmax"></a>vh和vw，vmin和vmax</h3><p>vh和vw相对于视口的高度和宽度，而不是父元素的（CSS百分比是相对于包含它的最近的父元素的高度和宽度）</p>
+<p>1vh 等于1/100的视口高度，1vw 等于1/100的视口宽度<br>比如：浏览器高度900px，宽度为750px, 1 vh = 900px/100 = 9 px，1vw = 750px/100 = 7.5 px。</p>
+<p>很容易实现与同屏幕等高的框：</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.slide &#123;height: 100vh;&#125;</span><br></pre></td></tr></table></figure>
+<p>设置一个和屏幕同宽的标题，h1{font-size:100vw}，那标题的字体大小就会自动根据浏览器的宽度进行缩放，以达到字体和viewport大小同步的效果。</p>
+<ul>
+<li><h3 id="vmin-and-vmax：关于视口高度和宽度两者的最小值或者最大值。"><a href="#vmin-and-vmax：关于视口高度和宽度两者的最小值或者最大值。" class="headerlink" title="vmin and vmax：关于视口高度和宽度两者的最小值或者最大值。"></a>vmin and vmax：关于视口高度和宽度两者的最小值或者最大值。</h3>比如，浏览器的宽度设置为1200px，高度设置为800px， 1vmax = 1200/100px = 12px， 1vmin = 800/100px = 8px。如果宽度设置为600px,高度设置为1080px, 1vmin就等于6px, 1vmax则等于10.8px。<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head lang=<span class="hljs-string">"en"</span>&gt;</span><br><span class="line">    &lt;meta charset=<span class="hljs-string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;meta name=<span class="hljs-string">"viewport"</span> content=<span class="hljs-string">"width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"</span>/&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        *&#123;margin:0; padding:0;&#125;</span><br><span class="line">        .box &#123;</span><br><span class="line">            height: 100vmin;</span><br><span class="line">            width: 100vmin;</span><br><span class="line">            background:<span class="hljs-comment">#f00;/*为了让用户看到*/</span></span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div class=<span class="hljs-string">"box"</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如果要让这个元素始终铺满整个视口的可视区域，只需要把上面的vmin改成vmax即可</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*&#123;margin:0; padding:0;&#125;</span><br><span class="line">.box &#123;</span><br><span class="line">    height: 100vmax;</span><br><span class="line">    width: 100vmax;</span><br><span class="line">    background:<span class="hljs-comment">#f00;/*为了让用户看到*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>vw, vh, vmin, vmax：IE9+局部支持，chrome/firefox/safari/opera支持，iOS safari 8+支持，Androidbrowser4.4+支持，chrome for android39支持</code></p>
+</li>
+<li><h3 id="其它的单位还有："><a href="#其它的单位还有：" class="headerlink" title="其它的单位还有："></a>其它的单位还有：</h3><p>%:百分比<br>in:寸<br>cm:厘米<br>mm:毫米<br>pt:point，大约1/72寸</p>
+<p>pc:pica，大约6pt，1/6寸</p>
+</li>
+<li><h3 id="ex："><a href="#ex：" class="headerlink" title="ex："></a>ex：</h3><p>取当前作用效果的字体的x的高度，在无法确定x高度的情况下以0.5em计算(IE11及以下均不支持，firefox/chrome/safari/opera/ios safari/android browser4.4+等均需属性加么有前缀)</p>
+</li>
+<li><h3 id="ch"><a href="#ch" class="headerlink" title="ch:"></a>ch:</h3><p>以节点所使用字体中的“0”字符为基准，找不到时为0.5em(ie10+,chrome31+,safair7.1+,opera26+,ios safari 7.1+,android browser4.4+支持)</p>
+<p><img src="/hexo-blog/gallery/thumbnails/vall.png" alt="汇总表"></p>
+</li>
+</ul>
 
-<div class="card widget">
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/hexo-blog/tags/尺寸/">尺寸</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
     <div class="card-content">
-        <h3 class="tag is-link">
-        四月 2019
-        </h3>
-        <div class="timeline">
-        
-            <article class="media">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
                 
-                <a href="/hexo-blog/2019/04/30/vue-cli/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="/hexo-blog/gallery/thumbnails/wind-mill.jpg" alt="vue-cli单页面开发">
-                    </p>
-                </a>
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/hexo-blog/images/alipay.jpg" alt="支付宝"></div>
+</a>
+
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-04-30T10:38:59.000Z">2019-04-30</time>
-                        <a href="/hexo-blog/2019/04/30/vue-cli/" class="has-link-black-ter is-size-6">vue-cli单页面开发</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/hexo-blog/categories/VUE/">VUE</a> / <a class="has-link-grey -link" href="/hexo-blog/categories/VUE/vue-cli/">vue-cli</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
                 
-                <a href="/hexo-blog/2019/04/30/ArcGIS-Server/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="/hexo-blog/gallery/thumbnails/arcgis106.jpg" alt="ArcGIS服务器环境部署（10.5/10.6）">
-                    </p>
-                </a>
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/hexo-blog/images/wechat.jpg" alt="微信"></div>
+</a>
+
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-04-30T07:38:59.000Z">2019-04-30</time>
-                        <a href="/hexo-blog/2019/04/30/ArcGIS-Server/" class="has-link-black-ter is-size-6">ArcGIS服务器环境部署（10.5/10.6）</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/hexo-blog/categories/ArcGIS/">ArcGIS</a> / <a class="has-link-grey -link" href="/hexo-blog/categories/ArcGIS/ArcGIS4-5-4-6服务部署/">ArcGIS4.5/4.6服务部署</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <a href="/hexo-blog/2019/04/30/ArcGIS/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="/hexo-blog/gallery/thumbnails/arcgis.png" alt="什么是ArcGIS">
-                    </p>
-                </a>
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-04-30T07:30:59.000Z">2019-04-30</time>
-                        <a href="/hexo-blog/2019/04/30/ArcGIS/" class="has-link-black-ter is-size-6">什么是ArcGIS</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/hexo-blog/categories/ArcGIS/">ArcGIS</a> / <a class="has-link-grey -link" href="/hexo-blog/categories/ArcGIS/什么是ArcGIS/">什么是ArcGIS</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <a href="/hexo-blog/2019/04/30/index/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="https://images.unsplash.com/photo-1501780392773-287d506245a5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="nginx服务器相关配置">
-                    </p>
-                </a>
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-04-30T05:30:59.000Z">2019-04-30</time>
-                        <a href="/hexo-blog/2019/04/30/index/" class="has-link-black-ter is-size-6">nginx服务器相关配置</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/hexo-blog/categories/服务器/">服务器</a> / <a class="has-link-grey -link" href="/hexo-blog/categories/服务器/nginx/">nginx</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <a href="/hexo-blog/2019/04/30/hello-world/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="关于博客">
-                    </p>
-                </a>
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-04-30T03:38:59.000Z">2019-04-30</time>
-                        <a href="/hexo-blog/2019/04/30/hello-world/" class="has-link-black-ter is-size-6">关于博客</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/hexo-blog/categories/博客/">博客</a> / <a class="has-link-grey -link" href="/hexo-blog/categories/博客/简介/">简介</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
         </div>
     </div>
 </div>
 
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/hexo-blog/2019/05/06/web-responsive/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">自适应与响应式布局</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/hexo-blog/2019/05/05/web-html/">
+                <span class="level-item">HTML规范</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 </div>
@@ -389,6 +412,69 @@
 
     
         
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                目录
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#px：为像素单位。它是显示屏上显示的每一个小点，为显示的最小单位。它是一个绝对尺寸单位；">
+        <span class="has-mr-6">1</span>
+        <span>px：为像素单位。它是显示屏上显示的每一个小点，为显示的最小单位。它是一个绝对尺寸单位；</span>
+        </a></li><li>
+        <a class="is-flex" href="#em：相对值，非固定大小单位">
+        <span class="has-mr-6">2</span>
+        <span>em：相对值，非固定大小单位</span>
+        </a></li><li>
+        <a class="is-flex" href="#rem：W3C官网是这样描述的“fontsize-of-the-root-element”，root-element就是指的根元素html">
+        <span class="has-mr-6">3</span>
+        <span>rem：W3C官网是这样描述的“fontsize of the root element”，root element就是指的根元素html</span>
+        </a></li><li>
+        <a class="is-flex" href="#百分比，相对长度单位，相对于父元素的百分比值">
+        <span class="has-mr-6">4</span>
+        <span>% 百分比，相对长度单位，相对于父元素的百分比值</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#尽量使用相对尺寸单位">
+        <span class="has-mr-6">4.1</span>
+        <span>尽量使用相对尺寸单位</span>
+        </a></li><li>
+        <a class="is-flex" href="#只在可预知的元素上使用绝对尺寸">
+        <span class="has-mr-6">4.2</span>
+        <span>只在可预知的元素上使用绝对尺寸</span>
+        </a></li><li>
+        <a class="is-flex" href="#字体尺寸尽量使用em、rem">
+        <span class="has-mr-6">4.3</span>
+        <span>字体尺寸尽量使用em、rem</span>
+        </a></li><li>
+        <a class="is-flex" href="#media查询做平台适配，但禁止随处滥用">
+        <span class="has-mr-6">4.4</span>
+        <span>@media查询做平台适配，但禁止随处滥用</span>
+        </a></li><li>
+        <a class="is-flex" href="#vh和vw，vmin和vmax">
+        <span class="has-mr-6">4.5</span>
+        <span>vh和vw，vmin和vmax</span>
+        </a></li><li>
+        <a class="is-flex" href="#vmin-and-vmax：关于视口高度和宽度两者的最小值或者最大值。">
+        <span class="has-mr-6">4.6</span>
+        <span>vmin and vmax：关于视口高度和宽度两者的最小值或者最大值。</span>
+        </a></li><li>
+        <a class="is-flex" href="#其它的单位还有：">
+        <span class="has-mr-6">4.7</span>
+        <span>其它的单位还有：</span>
+        </a></li><li>
+        <a class="is-flex" href="#ex：">
+        <span class="has-mr-6">4.8</span>
+        <span>ex：</span>
+        </a></li><li>
+        <a class="is-flex" href="#ch">
+        <span class="has-mr-6">4.9</span>
+        <span>ch:</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
     
         
 
@@ -1026,7 +1112,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/hexo-blog/">
                 
-                    <img src="/hexo-blog/images/snail.svg" alt="Mrsnial&#39;s blog" height="28">
+                    <img src="/hexo-blog/images/snail.svg" alt="px,em,rem,vh,vw,vmin,vmax的区别" height="28">
                 
                 </a>
                 <p class="is-size-7">
